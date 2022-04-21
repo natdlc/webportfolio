@@ -393,7 +393,7 @@
     }
 
     .skills {
-        width: 1900px;
+        max-width: 1900px;
         flex-direction: column;
         align-items: center;
     }
