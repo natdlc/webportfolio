@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nat Corpuz | Full Stack Web Developer </title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script defer src="./script.js"></script>
+    <script defer src="https://kit.fontawesome.com/0e52dfb6d8.js" crossorigin="anonymous"></script>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2BrU51q9dppVf4sr_Jo1UzzOmy0-Ovx0&callback=initMap&v=weekly"
+    defer></script>
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <p class="n">N</p>
+            <p class="c">C</p>
+        </div>
+        <div class="burger">
+            <div id="line1" class="line one"></div>
+            <div id="line2" class="line two"></div>
+            <div id="line3" class="line three"></div>
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#home">home</a></li>
+            <li class="menu-item"><a href="#about">about</a></li>
+            <li class="menu-item"><a href="#skills">skills</a></li>
+            <li class="menu-item"><a href="#projects">projects</a></li>
+            <li class="menu-item"><a href="#contact">contact</a></li>
+        </ul>
+        <ul class="menu-lg">
+            <li class="menu-item-lg"><a href="#home">home</a></li>
+            <li class="menu-item-lg"><a href="#about">about</a></li>
+            <li class="menu-item-lg"><a href="#skills">skills</a></li>
+            <li class="menu-item-lg"><a href="#projects">projects</a></li>
+            <li class="menu-item-lg"><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-container">
+        <div class="texts">
+            <div class="intro">
+                <p class="greet">Hello, I'm</p>
+                <h1 class="name">Nat <span>Corpuz</span></h1>
+            </div>
+            <div class="intro-title">
+                <p class="title">full stack web developer</p>
+                <p class="title">ui / ux designer</p>
+            </div>
+            <div class="intro-desc">
+                <p class="text">I build professional and elegant websites.</p>
+            </div>
+        </div>
+        <a href="#contact" class="cta">Contact Me</a>
+        <a class="scroll-container" href="#about">
+            <div class="scroll">
+                <div class="scroll-line scroll-line-1"></div>
+                <div class="scroll-line scroll-line-2"></div>
+            </div>
+        </a>
+        <a class="design" href="#projects">
+            <div class="shape"></div>
+        </a>
+    </section>
+
+    <section id="about">
+        <div id="story">
+            <p class="my-story"><span>About</span> Me</p>
+            <div class="story-content">
+                <div class="img-container">
+                    <img src="./assets/photo.png" alt="">
+                </div>
+                <div class="about-desc">
+                    <p class="about-desc-1">
+                        <span>I am currently</span> a student in Zuitt coding bootcamp.
+                    </p>
+                    <p class="about-desc-2"><span>I am passionate about</span> turning ideas to reality through web pages, feeding my curiosity through learning, and self-improvement.</p>
+                    <p class="about-desc-3">
+                        <span>When I'm not coding</span>, you'll find me learning a new skill, playing video games, exercising, or browsing through design trends websites.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="skills">
+            <p class="my-skills">My <span>Skills</span></p>
+            <div class="skills">
+                <div class="front-end">
+                    <div class="skills-texts">
+                        <p class="text">Front-End</p>
+                        <p class="desc">My layouts and styles are inspired by simplicity and sophistication. </p>
+                    </div>
+                    <div class="icons">
+                        <img src="./assets/icons/html.png" alt="html5 icon">
+                        <img src="./assets/icons/css.png" alt="css3 ocpm">
+                        <img src="./assets/icons/bootstrap.png" alt="bootstrap icon">
+                        <img src="./assets/icons/react.png" alt="react icon">
+                        <img src="./assets/icons/figma.png" alt="figma icon">
+                        <img src="./assets/icons/gimp.png" alt="gimp icon">
+                    </div>
+                </div>
+                <div class="back-end">
+                    <div class="skills-texts">
+                        <p class="text">Back-end</p>
+                        <p class="desc">I enjoy building systems that are scalable and easy to maintain.</p>
+                    </div>
+                    <div class="icons">
+                        <img src="./assets/icons/javascript.png" alt="javascript icon">
+                        <img src="./assets/icons/mongodb.png" alt="mongoDB icon">
+                        <img src="./assets/icons/expressjs.png" alt="expressjs">
+                        <img src="./assets/icons/nodejs.png" alt="nodejs">
+                        <img src="./assets/icons/postman.png" alt="postman">
+                        <img src="./assets/icons/heroku.png" alt="heroku">
+                    </div>
+                </div>
+                <div class="dev-tools">
+                    <div class="skills-texts">
+                        <p class="text">Dev-tools</p>
+                        <p class="desc">Here are the tools I use to make for a stress-free and efficient development environment.</p>
+                    </div>
+                    <div class="icons">
+                        <img src="./assets/icons/git.png" alt="git">
+                        <img src="./assets/icons/github.png" alt="github">
+                        <img src="./assets/icons/gitlab.png" alt="gitlab">
+                        <img src="./assets/icons/webpack.png" alt="webpack">
+                        <img src="./assets/icons/prettier.png" alt="prettier">
+                        <img src="./assets/icons/eslint.png" alt="eslint">
+                        <img src="./assets/icons/npm.png" alt="npm">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="my-projects">My <span>Projects</span></p>
+        <div class="projects-container">
+            <a href="https://natdlc.github.io/capstone-1/" target="_blank" class="project">
+                <img src="./assets/capstone1.png" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Zuitt Capstone 1</p>
+                    <p class="project-title">(Portfolio)</p>
+                    <p class="project-desc">Fully responsive with a Google Maps API.</p>
+                </div>
+            </a>
+            <a href="https://natdlc.github.io/todo/" target="_blank" class="project">
+                <img src="./assets/project1.png" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Daily Planner</p>
+                    <p class="project-desc">Desktop-only list keeper. Stores data via local storage. Developed with Webpack and npm.</p>
+                </div>
+            </a>
+            <a href="https://natdlc.github.io/tictactoe/" target="_blank" class="project">
+                <img src="./assets/project2.png" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Tic Tac Toe</p>
+                    <p class="project-desc">Fully responsive mini-game with a basic ai and two-player implementation.</p>
+                </div>
+            </a>
+            <a href="https://natdlc.github.io/admin-dashboard/" target="_blank" class="project">
+                <img src="./assets/project4.png" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Admin Dashboard</p>
+                    <p class="project-desc">Desktop-only web page for showcasing CSS Grid.</p>
+                </div>
+            </a>
+            <a href="https://natdlc.github.io/sign-up-form/" target="_blank" class="project">
+                <img src="./assets/project3.png" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Sign Up Form</p>
+                    <p class="project-desc">Desktop-only web page for showcasing a single-page form design.</p>
+                </div>
+            </a>
+            <a href="#" target="" class="project">
+                <img src="https://via.placeholder.com/1920x1080.png/f1f1f1?text=+" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Zuitt Capstone 2</p>
+                    <p class="project-desc">Coming soon.</p>
+                </div>
+            </a>
+            <a href="#" target="" class="project">
+                <img src="https://via.placeholder.com/1920x1080.png/f1f1f1?text=+" alt="">
+                <div class="fill"></div>
+                <div class="project-title-container">
+                    <p class="project-title">Zuitt Capstone 3</p>
+                    <p class="project-desc">Coming soon.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="contact-title">Say <span>Hello</span></p>
+        <p class="contact-desc">If you have a project in mind, or just want to get in touch, send me a message below or email me on <span>nate.corpuz1@gmail.com</span>.</p>
+        
+        <div class="form-and-map">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                <button class="submit-form">Submit</button>
+            </form>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section"></div>
+
+    <section id="footer">
+        <!-- <div class="menu-footer">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div> -->
+
+        <div class="socials">
+            <a target="_blank" href="https://github.com/natdlc"><img src="./assets/icons/github-white.png" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nate-corpuz/"><img src="./assets/icons/linkedin-white.png" alt=""></a>
+            <a target="_blank" href="https://twitter.com/corpuz_nate"><img src="./assets/icons/twitter-white.png" alt=""></a>
+        </div>
+
+
+        <div class="copyright">
+            <p class="copyright-text">Copyright &#169; 2022 Nat Corpuz</p>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>

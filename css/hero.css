@@ -1,0 +1,309 @@
+.hero-container {
+    position: relative;
+    /* background-color: var(--whiteOne); */
+    /* border-bottom: 1px solid var(--grayFour); */
+    background: white;
+    /* z-index: 1; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    cursor: default;
+}
+
+.design {display: none;}
+
+/* texts */
+
+.texts {
+    width: 100%;
+    position: relative;
+}
+
+.intro, .intro-title {
+    padding-left: 7vw;
+}
+
+.greet {
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.name {
+    margin-left: -3px;
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+}
+
+.name span {
+    color: var(--themeOne);
+}
+
+.title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.28rem;
+    padding: 0.2rem 0;
+}
+
+.intro-desc .text {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: var(--themeOne);
+    padding: 1rem;
+    word-spacing: 0.13rem;
+    color: var(--themeSix);
+}
+
+.cta {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 0.3rem 0.2rem;
+    font-weight: 900;
+    border-bottom: 1px solid var(--themeOne);
+}
+
+/* texts end */
+
+
+
+.scroll-container {
+    display: flex;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+}
+
+.scroll {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.scroll-line {
+    position: absolute;
+    width: 40%;
+    border-radius: 15px;
+    height: 5px;
+    bottom: 40%;
+    transition: all 0.4s;
+}
+
+.scroll-line-1 {
+    right: 19%;
+    transform: rotate(-45deg);
+    background-color: var(--blackOne);
+}
+
+.scroll-line-2 {
+    left: 19%;
+    transform: rotate(45deg) scale(1);
+    background-color: var(--blackOne);
+}
+
+.scroll-container:hover .scroll-line {
+    background-color: var(--themeOne);
+}
+
+.scroll-container:hover .scroll-line-1 {
+    transform: rotate(-45deg) scale(1.25);
+}
+
+.scroll-container:hover .scroll-line-2 {
+    transform: rotate(45deg) scale(1.25);
+}
+
+@media (min-width: 576px) {
+
+    .intro, .intro-title {
+        margin-left: 15vw;
+        padding: 0;
+    }
+
+    .greet {
+        font-size: 0.8rem;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .intro-desc {
+        margin-left: 15vw;
+    }
+
+    .intro-desc .text {
+        margin-top: 1rem;
+        padding: 0;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: start;
+        color: var(--themeOne);
+        display: inline-block;
+        background: none;
+    }
+
+    .cta {
+        align-self: start;
+        padding: 0.5rem 0 0.2rem 0;
+        margin-left: 15vw;
+    }
+
+    .design {
+        position: absolute;
+        bottom: 25%;
+        right: 20%;
+        display: block;
+        /* z-index: -1; */
+    }
+
+    .shape {
+        width: 15vw;
+        height: 5vw;
+        background-color: var(--themeOne);
+        transform: scale(1.0) skew(-45deg); 
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .shape::before, .shape::after {
+        border-radius: 10px;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: -1vw;
+        background-color: var(--themeThree);
+    }
+
+
+    .shape::after {
+        margin: -2vw;
+        background-color: var(--themeSix);
+        animation: shapetop-hover 5s infinite alternate, glowing 5s infinite alternate;
+    }
+
+    .shape::before {
+        animation: shapemid-hover 5s infinite alternate, glowing 5s infinite alternate;
+    }
+
+    .shape {
+        animation: shapebot-hover 5s infinite alternate, glowing 5s infinite alternate;
+    }
+}
+
+@keyframes shapetop-hover {
+    0% {
+        margin: -2vw;
+    }
+
+    100% {
+        margin: -3vw;
+    }
+}
+
+@keyframes shapemid-hover {
+    0% {
+        margin: -1vw;
+    }
+
+    100% {
+        margin: -1.5vw;
+    }
+}
+
+@keyframes shapebot-hover {
+    0% {
+        margin-bottom: 0;
+    }
+
+    100% {
+        margin-bottom: -0.5vw;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0 0 50px var(--themeOne);
+        opacity: 0.85;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .design {
+        right: 10%;
+    }
+
+    .greet {font-size: 1rem;}
+    .name {font-size: 5.5rem;}
+
+    .title {
+        font-size: 1.5rem; 
+        font-weight: 400;
+    }
+
+    .intro-desc .text {
+        font-size: 1.5rem; 
+        font-weight: 900;
+        margin-top: 4rem;
+    }
+
+    .cta {
+        font-weight: 400;
+        font-size: 1.2rem; 
+        background-color: var(--themeOne);
+        color: white;
+        border-radius: 25px;
+        padding: 1.2rem 2rem;
+        border: none;
+    }
+
+    .design {bottom: 35%;}
+
+    .shape {
+        width: 18vw; 
+        height: 8vw;
+    }
+
+    .cta {
+        transform: scale(1);
+        transition: transform 0.4s;
+    }
+    
+    .cta:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1200px) {
+    .design {
+        right: 20%;
+    }
+}
