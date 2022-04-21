@@ -156,7 +156,7 @@ input, textarea {
     #contact::before {
         position: absolute;
         content: '';
-        top: 34.8%;
+        top: 32.8%;
         right: 16.8%;
         bottom: -7%;
         left: 16.8%;
