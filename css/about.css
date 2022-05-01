@@ -393,16 +393,20 @@
     }
 
     .skills {
-        max-width: 1900px;
-        flex-direction: column;
+        max-width: 1700px;
+        /* flex-direction: column; */
         align-items: center;
     }
 
     .skills > div {
+        width: 400px;
         background-color: white;
         border: 1px solid var(--grayThree);
         border: none;
         box-shadow: 0 0 9px var(--grayThree);
+        height: 350px;
+        justify-content: space-between;
+        gap: 0;
     }
 
     .my-story, .my-skills {
@@ -427,6 +431,7 @@
     .skills .desc {
         font-size: 1.2rem;
         line-height: 2;
+        padding: 0;
     }
     
 }
