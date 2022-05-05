@@ -132,6 +132,11 @@ input, textarea {
 }
 
 @media (min-width: 1200px) {
+    .contact-title {
+        text-align: center;
+        margin: 0;
+    }
+
     .contact-desc {
         width: 50%;
         font-size: 1.05rem;
@@ -151,6 +156,8 @@ input, textarea {
 
     #contact {
         position: relative;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
     }
 
     #contact::before {
