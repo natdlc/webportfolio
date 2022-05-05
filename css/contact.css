@@ -157,9 +157,9 @@ input, textarea {
         position: absolute;
         content: '';
         top: 32.8%;
-        right: 16.8%;
+        right: 23.8%;
         bottom: -7%;
-        left: 16.8%;
+        left: 23.8%;
         z-index: -1;
         border-radius: 10px;
         background-color: white;
@@ -181,7 +181,7 @@ input, textarea {
         text-align: center;
         font-size: 4rem;
         width: fit-content;
-        margin: 0 auto 3rem;
+        margin: 0 auto;
     }
 
     .contact-desc {
